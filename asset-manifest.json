@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/nuetab/static/css/main.5e4e9510.chunk.css",
+    "main.js": "/nuetab/static/js/main.21cb0dfd.chunk.js",
+    "main.js.map": "/nuetab/static/js/main.21cb0dfd.chunk.js.map",
+    "runtime-main.js": "/nuetab/static/js/runtime-main.26489dbb.js",
+    "runtime-main.js.map": "/nuetab/static/js/runtime-main.26489dbb.js.map",
+    "static/js/2.1d35e5d3.chunk.js": "/nuetab/static/js/2.1d35e5d3.chunk.js",
+    "static/js/2.1d35e5d3.chunk.js.map": "/nuetab/static/js/2.1d35e5d3.chunk.js.map",
+    "index.html": "/nuetab/index.html",
+    "precache-manifest.810d8e1726baccfc8225b21dbe418eb5.js": "/nuetab/precache-manifest.810d8e1726baccfc8225b21dbe418eb5.js",
+    "service-worker.js": "/nuetab/service-worker.js",
+    "static/css/main.5e4e9510.chunk.css.map": "/nuetab/static/css/main.5e4e9510.chunk.css.map",
+    "static/media/logo.svg": "/nuetab/static/media/logo.25bf045c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.26489dbb.js",
+    "static/js/2.1d35e5d3.chunk.js",
+    "static/css/main.5e4e9510.chunk.css",
+    "static/js/main.21cb0dfd.chunk.js"
+  ]
+}
