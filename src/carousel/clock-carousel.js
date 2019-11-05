@@ -15,7 +15,8 @@ class ClockCarousel extends React.Component {
         this.targetRef = React.createRef();
         this.state = {
             time: new Date(),
-            format: "dddd, MMMM Do YYYY, h:mm:ss a",
+            dateFormat: "dddd, MMMM Do YYYY",
+            timeFormat: "h:mm:ss a",
             clockStyle: null
         };
 
@@ -29,8 +30,8 @@ class ClockCarousel extends React.Component {
         const height = ref.clientHeight;
         const width = ref.clientWidth;
         this.setState({clockStyle: {
-            marginLeft: -(width / 2),
-            marginTop: -(height / 2)
+            marginLeft: -(width / 2.0),
+            marginTop: -(height / 2.0)
         }});
     }
 
@@ -39,11 +40,6 @@ class ClockCarousel extends React.Component {
         const dateToFormat = new Date();
         return (
             <div className="carousel-container">
-                <style>
-                    #clock-container {
-
-                    }
-                </style>
                 <Carousel ref={this.carouselRef}>
                     <Carousel.Item>
                         <img
@@ -81,28 +77,15 @@ class ClockCarousel extends React.Component {
                         />
                     </Carousel.Item>
                 </Carousel>
-                <h2 className="text-center p-4" id="clock-container" style={this.state.clockStyle}>
-                    <Moment format={this.state.format}>{this.state.time}</Moment>
-                </h2>
+                <div id="clock-container" className="text-center p-0" style={this.state.clockStyle}>
+                    <h1 className="font-weight-bolder text-white text-center p-4">
+                        <Moment format={this.state.dateFormat}>{this.state.time}</Moment><br/>
+                        <Moment format={this.state.timeFormat}>{this.state.time}</Moment>
+                    </h1>
+                </div>
             </div>
         );
     }
 }
-
-// Performs better when kept in a separate function
-$(function () {
-
-    let mmt = () => {
-        return '<h1 class="display-1"><strong>' +
-            moment().format('MMMM Do YYYY') +
-            '</strong></h1><h1 class="display-1"><strong>' +
-            moment().format('h:mm:ss a') + '</strong></h1>';
-    };
-
-    $('#carousel-clock').html(mmt());
-    window.setInterval(() => {
-        $('#carousel-clock').html(mmt());
-    }, 1000);
-});
 
 export default ClockCarousel;

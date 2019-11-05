@@ -42,6 +42,7 @@ body {
 }
 
 .carousel-container {
+  width: 100%;
   position: relative;
 }
 
@@ -49,7 +50,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  background: rgba(240, 240, 240, 0.6);
+  background: rgba(35, 35, 35, 0.6);
 }
 
 /* MARKETING CONTENT
