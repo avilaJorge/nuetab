@@ -2,8 +2,8 @@ import React, {useEffect, useState} from 'react';
 
 import '../index.css';
 import './home.css';
-import Carousel from '../carousel/carousel';
-import '../carousel/carousel.css';
+import ClockCarousel from '../carousel/clock-carousel';
+import '../carousel/clock-carousel.css';
 import NavBar from "../nav-bar/nav-bar";
 import Calendar from "../calendar/my-calendar";
 import Courses from "../courses/courses";
@@ -65,7 +65,7 @@ class Home extends React.Component {
             <div className="nutab">
                 <main role="main">
                     <NavBar changePage={this.changePage} />
-                    <Carousel/>
+                    <ClockCarousel/>
                     <SuspenseWithPerf
                         fallback={'loading ...'}
                         traceId={'load-status'}

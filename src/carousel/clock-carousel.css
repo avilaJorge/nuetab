@@ -12,7 +12,7 @@ body {
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
-/* Carousel base class */
+/* ClockCarousel base class */
 .carousel {
   margin-bottom: 4rem;
 }
@@ -39,6 +39,17 @@ body {
   position: absolute;
   top: 8rem;
   width: 96.6667%;
+}
+
+.carousel-container {
+  position: relative;
+}
+
+.carousel-container > #clock-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: rgba(240, 240, 240, 0.6);
 }
 
 /* MARKETING CONTENT
