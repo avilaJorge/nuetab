@@ -12,9 +12,8 @@ import {
 } from 'reactfire';
 import 'firebase/performance';
 
-// import Home from './home/home';
 import './index.css';
-import App from './App';
+import Home from './home/home';
 import SignIn from './sign-in/sign-in';
 
 const firebaseConfig = {
@@ -38,7 +37,7 @@ function UseCallFirebase(props) {
     const ref = firebaseApp.firestore().collection(timerCollectionName);
 
     return (
-        <App timerRef={ref}/>
+        <Home timerRef={ref}/>
     );
 }
 
