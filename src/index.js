@@ -49,6 +49,7 @@ ReactDOM.render(
                     <Spinner animation="grow" role="status" className="login-spinner"/>
                 </div>
             </>
+
         }>
             <AuthCheck fallback={<SignIn/>}>
                 <UseCallFirebase/>
