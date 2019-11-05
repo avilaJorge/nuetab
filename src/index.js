@@ -9,14 +9,10 @@ import {
     SuspenseWithPerf, useFirebaseApp
 } from 'reactfire';
 import 'firebase/performance';
-import firebase from 'firebase';
-// Bootstrap
-import { Button } from "react-bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 
 // import Home from './home/home';
 import App from './App';
+import SignIn from './sign-in/sign-in';
 
 const firebaseConfig = {
     apiKey: "AIzaSyASE_m6wDIaaXit-Wh-jWXOobBjBgEjEsg",
@@ -43,36 +39,10 @@ function UseCallFirebase(props) {
     );
 }
 
-function Login(props) {
-    console.log(props);
-    let auth = () => {
-        firebase.auth().getRedirectResult().then((result) => {
-            let token = null;
-            if (result.credential) {
-                token = result.credential.accessToken;
-            }
-            let user = result.user;
-        });
-        let provider = new firebase.auth.GoogleAuthProvider();
-        provider.addScope('profile');
-        provider.addScope('email');
-        firebase.auth().signInWithRedirect(provider);
-    };
-
-    return (
-        <Button variant="light" size="lg" className="buttons" onClick={auth}>
-            <FontAwesomeIcon icon={faGoogle}/>
-        </Button>
-    );
-}
-
-
-
-
 ReactDOM.render(
     <FirebaseAppProvider firebaseConfig={firebaseConfig} initPerformance>
         <SuspenseWithPerf traceId={'load-login-status'} fallback={<p>Loading Login Status ....</p>}>
-            <AuthCheck fallback={<Login/>}>
+            <AuthCheck fallback={<SignIn/>}>
                 <UseCallFirebase/>
             </AuthCheck>
         </SuspenseWithPerf>
