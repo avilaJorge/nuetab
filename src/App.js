@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
+import Spinner from 'react-bootstrap/Spinner';
 import './App.css';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         >
           Learn React
         </a>
+        <Spinner animation="grow"/>
       </header>
     </div>
   );

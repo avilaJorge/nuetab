@@ -34,11 +34,11 @@ class SignIn extends React.Component{
     render() {
         return (
             <>
-                <div className="SignIn text-center">
+                <div className="SignIn">
                     <div className="form-signin">
                         <img className="mb-4" src={blogo} className="" alt="logo" width="72" height="72"/>
                         <img className="mb-4" src={rlogo} className="" alt="logo" width="72" height="72"/>
-                        <h1 className="h3 mb-3 font-weight-normal">Please sign in</h1>
+                        <h1 className="h3 mb-4 mt-4 font-weight-normal">Please sign in</h1>
                         <Button variant="light" size="lg" className="button login-button" onClick={this.auth}>
                             <FontAwesomeIcon icon={faGoogle}/>
                         </Button>

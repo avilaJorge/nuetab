@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import Spinner from 'react-bootstrap/Spinner';
 import * as serviceWorker from './serviceWorker';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import {
     FirebaseAppProvider,
@@ -11,6 +13,7 @@ import {
 import 'firebase/performance';
 
 // import Home from './home/home';
+import './index.css';
 import App from './App';
 import SignIn from './sign-in/sign-in';
 
@@ -41,7 +44,13 @@ function UseCallFirebase(props) {
 
 ReactDOM.render(
     <FirebaseAppProvider firebaseConfig={firebaseConfig} initPerformance>
-        <SuspenseWithPerf traceId={'load-login-status'} fallback={<p>Loading Login Status ....</p>}>
+        <SuspenseWithPerf traceId={'load-login-status'} fallback={
+            <>
+                <div className="Login">
+                    <Spinner animation="grow" role="status" className="login-spinner"/>
+                </div>
+            </>
+        }>
             <AuthCheck fallback={<SignIn/>}>
                 <UseCallFirebase/>
             </AuthCheck>
