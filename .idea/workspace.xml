@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cd8093d-5e7a-4c31-8f0f-17ee736adfcc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/calendar/my-calendar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calendar/my-calendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/calendar/my-calendar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nav-bar/nav-bar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/nav-bar/nav-bar.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,11 +21,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="5748" />
-    <option name="width" value="1941" />
-    <option name="height" value="2112" />
   </component>
   <component name="ProjectId" id="1T69m1TY8zCYGbD7DsBpJFow7ff" />
   <component name="PropertiesComponent">
@@ -74,7 +68,7 @@
       <workItem from="1572769836018" duration="367000" />
       <workItem from="1572891390187" duration="10302000" />
       <workItem from="1572945489670" duration="8755000" />
-      <workItem from="1572997090389" duration="1972000" />
+      <workItem from="1572997090389" duration="2883000" />
     </task>
     <servers />
   </component>

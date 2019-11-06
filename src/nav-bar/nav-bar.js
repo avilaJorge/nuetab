@@ -23,13 +23,6 @@ class NavBar extends React.Component {
                         <Nav.Link href="#gcal">My Calendar</Nav.Link>
                         <Nav.Link href="https://www.pexels.com/search/ocean/">Images</Nav.Link>
                     </Nav>
-                    <Form inline>
-                        <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                        <Button variant="outline-info">Search</Button>
-                    </Form>
-                    <Navbar.Text>
-                        Signed in as:
-                    </Navbar.Text>
                 </Navbar>
             </>
         );
