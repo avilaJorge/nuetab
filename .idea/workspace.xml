@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cd8093d-5e7a-4c31-8f0f-17ee736adfcc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/custom-hooks/use-script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/nuetab.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/nuetab.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/carousel/clock-carousel.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/carousel/clock-carousel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Timers/timers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Timers/timers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/carousel/clock-carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/carousel/clock-carousel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cse224/CSE224.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/cse224/CSE224.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cse224/CSE224.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/cse224/CSE224.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +30,7 @@
   </component>
   <component name="ProjectId" id="1T69m1TY8zCYGbD7DsBpJFow7ff" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -34,14 +40,15 @@
     <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Jorge\Documents\React_Projects\nuetab\public" />
-      <recent name="C:\Users\Jorge\Documents\React_Projects\nuetab\src" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\JAvila\Documents\ReactJS_Projects\nuetab\src" />
       <recent name="C:\Users\Jorge\Documents\React_Projects\nuetab\src\sign-in" />
       <recent name="C:\Users\Jorge\Documents\React_Projects\nuetab\src" />
       <recent name="C:\Users\Jorge\Documents\React_Projects\nuetab\public" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Jorge\Documents\React_Projects\nuetab\public" />
+      <recent name="C:\Users\Jorge\Documents\React_Projects\nuetab\src" />
     </key>
   </component>
   <component name="RunDashboard">

@@ -23,19 +23,16 @@ class ClockCarousel extends React.Component {
 
     componentDidMount() {
         const ref = document.getElementById('clock');
-        const height = ref.clientHeight;
-        const width = ref.clientWidth;
-        if (width > 550) {
-            this.setState({clockStyle: {
-                    marginLeft: -(width / 2.0),
-                    marginTop: -(height / 2.0)
-                }});
-        } else {
-            this.setState({clockStyle: {
-                    marginLeft: 0,
-                    marginTop: -(height / 2.0)
-                }});
+        let height = ref.clientHeight;
+        let width = ref.clientWidth;
+
+        if (width < 550) {
+            width = 0;
         }
+        this.setState({clockStyle: {
+                marginLeft: -(width / 2.0),
+                marginTop: -(height / 2.0)
+            }});
     }
 
     render () {
