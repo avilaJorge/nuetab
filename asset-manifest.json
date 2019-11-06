@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/nuetab/static/css/main.a90c4adc.chunk.css",
-    "main.js": "/nuetab/static/js/main.f8ec7948.chunk.js",
-    "main.js.map": "/nuetab/static/js/main.f8ec7948.chunk.js.map",
+    "main.js": "/nuetab/static/js/main.f3f1f3c2.chunk.js",
+    "main.js.map": "/nuetab/static/js/main.f3f1f3c2.chunk.js.map",
     "runtime-main.js": "/nuetab/static/js/runtime-main.26489dbb.js",
     "runtime-main.js.map": "/nuetab/static/js/runtime-main.26489dbb.js.map",
     "static/css/2.f81bc143.chunk.css": "/nuetab/static/css/2.f81bc143.chunk.css",
-    "static/js/2.903e3eb4.chunk.js": "/nuetab/static/js/2.903e3eb4.chunk.js",
-    "static/js/2.903e3eb4.chunk.js.map": "/nuetab/static/js/2.903e3eb4.chunk.js.map",
+    "static/js/2.f079baad.chunk.js": "/nuetab/static/js/2.f079baad.chunk.js",
+    "static/js/2.f079baad.chunk.js.map": "/nuetab/static/js/2.f079baad.chunk.js.map",
     "index.html": "/nuetab/index.html",
-    "precache-manifest.da1a34c04186ba9a36ebb208b9d94d93.js": "/nuetab/precache-manifest.da1a34c04186ba9a36ebb208b9d94d93.js",
+    "precache-manifest.8041fb9b54ca1cdfb23793df15178747.js": "/nuetab/precache-manifest.8041fb9b54ca1cdfb23793df15178747.js",
     "service-worker.js": "/nuetab/service-worker.js",
     "static/css/2.f81bc143.chunk.css.map": "/nuetab/static/css/2.f81bc143.chunk.css.map",
     "static/css/main.a90c4adc.chunk.css.map": "/nuetab/static/css/main.a90c4adc.chunk.css.map",
@@ -18,8 +18,8 @@
   "entrypoints": [
     "static/js/runtime-main.26489dbb.js",
     "static/css/2.f81bc143.chunk.css",
-    "static/js/2.903e3eb4.chunk.js",
+    "static/js/2.f079baad.chunk.js",
     "static/css/main.a90c4adc.chunk.css",
-    "static/js/main.f8ec7948.chunk.js"
+    "static/js/main.f3f1f3c2.chunk.js"
   ]
 }
