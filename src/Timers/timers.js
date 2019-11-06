@@ -18,7 +18,6 @@ import '../index.css';
 import './timers.css';
 
 function Submit(props) {
-    console.log(props)
     if (props.submit) {
         return (
             <StoreTimer
