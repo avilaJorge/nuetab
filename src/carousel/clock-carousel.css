@@ -106,14 +106,3 @@ body {
   }
 }
 
-@media (max-width: 550px) {
-  .carousel-container > #clock-container {
-    width: 100%;
-  }
-}
-
-@media (min-width: 550px) {
-  .carousel-container > #clock-container {
-    left: 50%;
-  }
-}
