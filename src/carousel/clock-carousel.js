@@ -27,13 +27,10 @@ class ClockCarousel extends React.Component {
         let height = ref.height;
         let width = ref.width;
 
-        if (width < 550) {
-            width = 0;
-        }
         this.setState({clockStyle: {
                 marginLeft: -(width / 2.0),
                 marginTop: -(height / 2.0),
-                left: '50%'
+                left: '50%',
             }});
     }
 

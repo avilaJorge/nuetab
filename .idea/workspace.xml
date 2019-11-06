@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4cd8093d-5e7a-4c31-8f0f-17ee736adfcc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/carousel/clock-carousel.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/carousel/clock-carousel.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/carousel/clock-carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/carousel/clock-carousel.js" afterDir="false" />
-    </list>
+    <list default="true" id="4cd8093d-5e7a-4c31-8f0f-17ee736adfcc" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,7 +216,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3398000" />
+    <option name="totallyTimeSpent" value="3668000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -233,7 +229,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="3833" y="0" width="1293" height="1407" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49532712" visible="true" weight="0.24920382" />
       <window_info id="Structure" order="1" sideWeight="0.5046729" side_tool="true" visible="true" weight="0.24920382" />
