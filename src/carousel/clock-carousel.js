@@ -2,9 +2,6 @@ import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import Moment from 'react-moment';
 
-import moment from 'moment';
-import $ from "jquery";
-
 import './clock-carousel.css';
 
 class ClockCarousel extends React.Component {
@@ -12,7 +9,6 @@ class ClockCarousel extends React.Component {
     constructor(props) {
         super(props);
 
-        this.targetRef = React.createRef();
         this.state = {
             time: new Date(),
             dateFormat: "dddd, MMMM Do YYYY",
@@ -26,18 +22,23 @@ class ClockCarousel extends React.Component {
     }
 
     componentDidMount() {
-        const ref = document.getElementById('clock-container');
+        const ref = document.getElementById('clock');
         const height = ref.clientHeight;
         const width = ref.clientWidth;
-        this.setState({clockStyle: {
-            marginLeft: -(width / 2.0),
-            marginTop: -(height / 2.0)
-        }});
+        if (width > 550) {
+            this.setState({clockStyle: {
+                    marginLeft: -(width / 2.0),
+                    marginTop: -(height / 2.0)
+                }});
+        } else {
+            this.setState({clockStyle: {
+                    marginLeft: 0,
+                    marginTop: -(height / 2.0)
+                }});
+        }
     }
 
     render () {
-
-        const dateToFormat = new Date();
         return (
             <div className="carousel-container">
                 <Carousel ref={this.carouselRef}>
@@ -78,7 +79,7 @@ class ClockCarousel extends React.Component {
                     </Carousel.Item>
                 </Carousel>
                 <div id="clock-container" className="text-center p-0" style={this.state.clockStyle}>
-                    <h1 className="font-weight-bolder text-white text-center p-4">
+                    <h1 className="font-weight-bolder text-white text-center p-4" id="clock">
                         <Moment format={this.state.dateFormat}>{this.state.time}</Moment><br/>
                         <Moment format={this.state.timeFormat}>{this.state.time}</Moment>
                     </h1>
