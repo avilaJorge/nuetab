@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/nuetab/static/css/main.71c66dd9.chunk.css",
-    "main.js": "/nuetab/static/js/main.ff70c14b.chunk.js",
-    "main.js.map": "/nuetab/static/js/main.ff70c14b.chunk.js.map",
+    "main.css": "/nuetab/static/css/main.b17cc915.chunk.css",
+    "main.js": "/nuetab/static/js/main.9fe5e4a1.chunk.js",
+    "main.js.map": "/nuetab/static/js/main.9fe5e4a1.chunk.js.map",
     "runtime-main.js": "/nuetab/static/js/runtime-main.26489dbb.js",
     "runtime-main.js.map": "/nuetab/static/js/runtime-main.26489dbb.js.map",
     "static/css/2.f81bc143.chunk.css": "/nuetab/static/css/2.f81bc143.chunk.css",
     "static/js/2.ed6021d2.chunk.js": "/nuetab/static/js/2.ed6021d2.chunk.js",
     "static/js/2.ed6021d2.chunk.js.map": "/nuetab/static/js/2.ed6021d2.chunk.js.map",
     "index.html": "/nuetab/index.html",
-    "precache-manifest.c7957e1554a7820c9ab4da7af4a579c4.js": "/nuetab/precache-manifest.c7957e1554a7820c9ab4da7af4a579c4.js",
+    "precache-manifest.f8e46361a188968ed6d1f861861e4129.js": "/nuetab/precache-manifest.f8e46361a188968ed6d1f861861e4129.js",
     "service-worker.js": "/nuetab/service-worker.js",
     "static/css/2.f81bc143.chunk.css.map": "/nuetab/static/css/2.f81bc143.chunk.css.map",
-    "static/css/main.71c66dd9.chunk.css.map": "/nuetab/static/css/main.71c66dd9.chunk.css.map",
-    "static/media/bootstrap-solid.svg": "/nuetab/static/media/bootstrap-solid.ce1914d4.svg"
+    "static/css/main.b17cc915.chunk.css.map": "/nuetab/static/css/main.b17cc915.chunk.css.map",
+    "static/media/bootstrap-solid.svg": "/nuetab/static/media/bootstrap-solid.ea931a5b.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.26489dbb.js",
     "static/css/2.f81bc143.chunk.css",
     "static/js/2.ed6021d2.chunk.js",
-    "static/css/main.71c66dd9.chunk.css",
-    "static/js/main.ff70c14b.chunk.js"
+    "static/css/main.b17cc915.chunk.css",
+    "static/js/main.9fe5e4a1.chunk.js"
   ]
 }
