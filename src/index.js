@@ -34,7 +34,7 @@ function UseCallFirebase(props) {
     console.log("UseCallFirebase called!");
 
     const firebaseApp = useFirebaseApp();
-    const ref = firebaseApp.firestore().collection(timerCollectionName).orderBy("time");
+    const ref = firebaseApp.firestore().collection(timerCollectionName);
 
     return (
         <Home timerRef={ref}/>
