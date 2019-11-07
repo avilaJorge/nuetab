@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b45a1b2e01a7476f7388c38c4cf9425a",
+    "revision": "c9d5d1499d9e5c45b3c1ec84d2fe9e26",
     "url": "/nuetab/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/nuetab/static/css/2.f81bc143.chunk.css"
   },
   {
-    "revision": "8927e2846419bbefb9ad",
+    "revision": "3bc1fa12aae1985d9c91",
     "url": "/nuetab/static/css/main.4722abf6.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/nuetab/static/js/2.1e1216c0.chunk.js"
   },
   {
-    "revision": "8927e2846419bbefb9ad",
-    "url": "/nuetab/static/js/main.17c760da.chunk.js"
+    "revision": "3bc1fa12aae1985d9c91",
+    "url": "/nuetab/static/js/main.a2a3f2ee.chunk.js"
   },
   {
     "revision": "34037e6f6e8237b99719",
