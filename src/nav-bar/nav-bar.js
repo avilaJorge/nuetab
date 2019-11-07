@@ -1,7 +1,15 @@
 import React from 'react';
-import { Nav, Form, FormControl, Button, Navbar } from 'react-bootstrap';
+import { Nav, Navbar } from 'react-bootstrap';
+import {useUser} from "reactfire";
 
 import Home from '../home/home';
+import './nav-bar.css';
+
+function GooglePhoto() {
+    return (
+        <img className="usr-photo float-right" src={useUser().photoURL} />
+    );
+}
 
 class NavBar extends React.Component {
 
@@ -15,14 +23,9 @@ class NavBar extends React.Component {
     render() {
         return (
             <>
-                <Navbar bg="dark" variant="dark">
+                <Navbar bg="dark" className="justify-content-between" variant="dark">
                     <Navbar.Brand href="#home" onClick={() => this.props.changePage(Home.pages.home)}>nutab</Navbar.Brand>
-                    <Nav className="mr-auto">
-                        <Nav.Link href="#courses" onClick={() => this.props.changePage(Home.pages.home)}>Courses</Nav.Link>
-                        <Nav.Link href="#cse224" onClick={() => this.props.changePage(Home.pages.cse224)}>CSE224</Nav.Link>
-                        <Nav.Link href="#gcal">My Calendar</Nav.Link>
-                        <Nav.Link href="https://www.pexels.com/search/ocean/">Images</Nav.Link>
-                    </Nav>
+                    <GooglePhoto />
                 </Navbar>
             </>
         );

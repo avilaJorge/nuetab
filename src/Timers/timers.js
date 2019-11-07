@@ -1,13 +1,10 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import 'firebase/firestore';
 import {
     useFirestoreCollection,
-    useFirebaseApp,
-    SuspenseWithPerf
 } from 'reactfire';
-import firebase from 'firebase';
 
-import { Card, CardColumns, ButtonToolbar, Button, Modal, Form } from 'react-bootstrap';
+import { Card, CardColumns, ButtonToolbar, Button, Modal, Form, Jumbotron } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEdit, faTrashAlt, faPlus, faCloudUploadAlt, faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 import DateTimePicker from 'react-datetime-picker';
@@ -320,37 +317,41 @@ class Timers extends React.Component {
 
     render() {
         return (
-            <div className="jumbotron bg-white" style={{paddingTop: '0'}}>
-                <CardColumns className="ml-4 mr-4">
-                    {(this.state.timers || []).map((item, index) => {
-                        if (item.delete) return (<div key={item.id}></div>);
-                        return (
-                            <Timer
-                                key={item.id}
-                                countdown={item.countdown}
-                                date={item.date}
-                                time={item.time}
-                                data={item.data}
-                                id={item.id}
-                                index={index}
-                                colRef={this.state.colRef}
-                                removeTimer={this.removeTimer}
-                                updateTimer={this.updateTimer}/>);
-                    })}
-                </CardColumns>
-                <Button variant="success" size="lg" className="float-right buttons" onClick={() => this.setState({showModal: true})}><FontAwesomeIcon icon={faPlus}/></Button>
-                <UseCreateTimerModal
-                    show={this.state.showModal}
-                    onHide={() => this.setState({showModal: false})}
-                    onSubmit={this.onSubmit}>
-                </UseCreateTimerModal>
-                <Submit
-                    send={this.state.send}
-                    submit={this.state.submit}
-                    cancelSubmit={this.cancelSubmit}
-                    addTimer={this.addTimer}
-                />
-            </div>
+            <>
+                <Jumbotron className="bg-white" style={{paddingTop: '0'}}>
+                    <CardColumns className="ml-4 mr-4">
+                        {(this.state.timers || []).map((item, index) => {
+                            if (item.delete) return (<div key={item.id}></div>);
+                            return (
+                                <Timer
+                                    key={item.id}
+                                    countdown={item.countdown}
+                                    date={item.date}
+                                    time={item.time}
+                                    data={item.data}
+                                    id={item.id}
+                                    index={index}
+                                    colRef={this.state.colRef}
+                                    removeTimer={this.removeTimer}
+                                    updateTimer={this.updateTimer}/>);
+                        })}
+                    </CardColumns>
+                    <div className="bg-light" style={{width: "100%", overflow: "auto"}}>
+                        <Button variant="success" size="lg m-2" className="float-right buttons" onClick={() => this.setState({showModal: true})}><FontAwesomeIcon icon={faPlus}/></Button>
+                    </div >
+                    <UseCreateTimerModal
+                        show={this.state.showModal}
+                        onHide={() => this.setState({showModal: false})}
+                        onSubmit={this.onSubmit}>
+                    </UseCreateTimerModal>
+                    <Submit
+                        send={this.state.send}
+                        submit={this.state.submit}
+                        cancelSubmit={this.cancelSubmit}
+                        addTimer={this.addTimer}
+                    />
+                </Jumbotron>
+            </>
         );
     }
 }

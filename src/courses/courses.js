@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Courses() {
+function Courses(props) {
     return (
         <div className="container marketing" id="courses">
             <div className="row">
@@ -36,17 +36,17 @@ function Courses() {
                           role="button">Important Dates &raquo;</a></p>
                 </div>
                 <div className="col-lg-4">
-                    <a href="http://cseweb.ucsd.edu/~gmporter/classNamees/fa19/cse224/"><img className="rounded-circle"
-                                                                                             src="img/Network.svg"
-                                                                                             height="140px"
-                                                                                             width="140px"/></a>
-                    <h2><a href="http://cseweb.ucsd.edu/~gmporter/classNamees/fa19/cse224/">CSE 224</a></h2>
+                    <a href="#" onClick={() => { props.changePage('cse224') }} ><img className="rounded-circle"
+                                           src="img/Network.svg"
+                                           height="140px"
+                                           width="140px"/></a>
+                    <h2><a href="#" onClick={() => {props.changePage('cse224')}}>CSE 224</a></h2>
                     <p>This course will provide a broad understanding of network design and implementation. Topics
                         include techniques for building distributed applications, sockets programming, Remote Procedure
                         Calls, scale-out distributed directories, distributed consensus and state management, fault
                         tolerance, networked storage, indirection, overlay networks, load balancing, and datacenter
                         design.</p>
-                    <p><a className="btn btn-secondary" href="cse224/cse224-calendar.html" role="button">Course
+                    <p><a className="btn btn-secondary" href="#" onClick={() => {props.changePage('cse224')}} role="button">Course
                         Calendar &raquo;</a></p>
                 </div>
                 <div className="col-lg-4">

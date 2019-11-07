@@ -31,8 +31,6 @@ const timerCollectionName = 'countdown-timers';
 
 function UseCallFirebase(props) {
 
-    console.log("UseCallFirebase called!");
-
     const firebaseApp = useFirebaseApp();
     const ref = firebaseApp.firestore().collection(timerCollectionName);
 

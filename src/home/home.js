@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 
 import '../index.css';
 import './home.css';
@@ -11,6 +11,7 @@ import Footer from "../footer/footer";
 import CSE224 from "../cse224/CSE224";
 import GetTimers from '../Timers/timers';
 import {SuspenseWithPerf, useFirebaseApp} from "reactfire";
+import Button from "react-bootstrap/Button";
 
 class Home extends React.Component {
 
@@ -26,6 +27,7 @@ class Home extends React.Component {
     constructor(props) {
         super(props);
 
+        this.ref = React.createRef();
         this.changePage = this.changePage.bind(this);
         this.renderHome = this.renderHome.bind(this);
 
@@ -34,7 +36,14 @@ class Home extends React.Component {
             page: this.renderHome(),
             timerCollectionRef: props.timerRef
         };
-        console.log(props.timerRef);
+    }
+
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        window.requestAnimationFrame(() => {
+            if (this.ref.current) {
+                this.ref.current.scrollIntoView({behavior: 'smooth', block: 'nearest', inline: 'center'});
+            }
+        })
     }
 
     changePage = (page) => {
@@ -43,8 +52,7 @@ class Home extends React.Component {
                 this.setState({page: this.renderHome()});
                 break;
             case Home.pages.cse224:
-                console.log(this.state.page);
-                this.setState({page: <CSE224/>});
+                this.setState({page: <CSE224 ref={this.ref}/>});
                 break;
             default:
                 this.state.page = this.renderHome();
@@ -53,8 +61,8 @@ class Home extends React.Component {
 
     renderHome() {
         return (
-            <div className="Home">
-                <Courses/>
+            <div ref={this.ref} className="Home">
+                <Courses changePage={this.changePage}/>
                 <Calendar/>
             </div>
         );
@@ -73,7 +81,6 @@ class Home extends React.Component {
                         <GetTimers timersColRef={this.state.timerCollectionRef}/>
                     </SuspenseWithPerf>
                     {this.state.page}
-                    <a href="https://www.npmjs.com/package/react-moment#quick-start">React-Moment</a>
                     <Footer/>
                 </main>
             </div>
