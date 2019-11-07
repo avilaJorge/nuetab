@@ -28,7 +28,7 @@ h1 {
     justify-content: center;
     flex-direction: column;
     line-height: 30px;
-    margin: 10px;
+    margin: 2px;
     padding-top: 10px;
     position: relative;
 }
@@ -37,4 +37,8 @@ h1 {
     font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
+}
+
+.cards-container {
+    border: 1px solid whitesmoke;
 }

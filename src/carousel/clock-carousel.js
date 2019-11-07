@@ -66,13 +66,6 @@ class ClockCarousel extends React.Component {
                             alt="Third slide"
                         />
                     </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src="https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                            alt="Third slide"
-                        />
-                    </Carousel.Item>
                 </Carousel>
                 <div id="clock-container" className="text-center p-0" style={this.state.clockStyle}>
                     <h1 className="font-weight-bolder text-white text-center p-4" id="clock">

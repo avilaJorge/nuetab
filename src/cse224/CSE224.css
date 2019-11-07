@@ -2,3 +2,12 @@
     padding-top: 0;
     padding-bottom: 0;
 }
+
+.card-container {
+    border: 1px solid whitesmoke;
+}
+
+#cse224 > .jumbotron {
+    padding-top: 0;
+    padding-bottom: 0;
+}
