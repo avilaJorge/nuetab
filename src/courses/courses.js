@@ -46,12 +46,11 @@ function Courses(props) {
                         Calls, scale-out distributed directories, distributed consensus and state management, fault
                         tolerance, networked storage, indirection, overlay networks, load balancing, and datacenter
                         design.</p>
-                    <p><a className="btn btn-secondary" href="#" onClick={() => {props.changePage('cse224')}} role="button">Course
-                        Calendar &raquo;</a></p>
+                    <p><a className="btn btn-secondary" href="#" onClick={() => {props.changePage('cse224')}} role="button">View Details</a></p>
                 </div>
                 <div className="col-lg-4">
                     <img className="rounded-circle" src="img/Entrepreneurship.svg" height="140px" width="140px"/>
-                    <h2><a href="https://piazza.com/className/jyvubsvfidm4xz">CSE 291E</a></h2>
+                    <h2><a href="https://piazza.com/class/jyvubsvfidm4xz">CSE 291E</a></h2>
                     <p>Microelectronics and semiconductors provide a cornerstone $1.2 Trillion Electronics systems
                         industry. The functionality, performance, the ease of use and affordability are at all-time
                         highs. The industry has demonstrated a consistent capability to innovate solutions to meet
@@ -59,7 +58,7 @@ function Courses(props) {
                         solutions. Innovations come from companies of all sizes. Innovators and entrepreneurs play a key
                         role and can have significant opportunities to bring new ideas to new products. Unfortunately
                         the success rate of new start-ups is anything but stellar.</p>
-                    <p><a className="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                    <p><a className="btn btn-secondary" href="https://piazza.com/class/jyvubsvfidm4xz" role="button">View details &raquo;</a></p>
                 </div>
             </div>
         </div>
