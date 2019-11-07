@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cd8093d-5e7a-4c31-8f0f-17ee736adfcc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cse224/CSE224.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/cse224/CSE224.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,8 +57,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/cse224/CSE224.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="322">
-                  <caret line="14" column="138" selection-start-line="14" selection-start-column="138" selection-end-line="14" selection-end-column="138" />
+                <state relative-caret-position="460">
+                  <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -213,12 +212,12 @@
       <workItem from="1572891390187" duration="10302000" />
       <workItem from="1572945489670" duration="8755000" />
       <workItem from="1572997090389" duration="2883000" />
-      <workItem from="1573103192468" duration="3150000" />
+      <workItem from="1573103192468" duration="3722000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17718000" />
+    <option name="totallyTimeSpent" value="18290000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -231,7 +230,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2575" height="1415" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49468714" visible="true" weight="0.12332545" />
       <window_info id="Structure" order="1" sideWeight="0.50531286" side_tool="true" visible="true" weight="0.12332545" />
@@ -407,8 +405,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cse224/CSE224.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="138" selection-start-line="14" selection-start-column="138" selection-end-line="14" selection-end-column="138" />
+        <state relative-caret-position="460">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
