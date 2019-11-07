@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/nuetab/precache-manifest.8f6b5094df9b6106516257a3cf6c6b23.js"
+  "/nuetab/precache-manifest.87f38075b06b50c34bed2bdb89fdfe34.js"
 );
 
 self.addEventListener('message', (event) => {
