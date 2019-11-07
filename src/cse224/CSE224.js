@@ -29,7 +29,7 @@ const CSE224 = React.forwardRef((props, ref) => {
                         </div>
                     </div>
                     <iframe style={{marginTop: '2rem'}} id="cse224-cal" src="https://cseweb.ucsd.edu/~gmporter/classes/fa19/cse224/index.html" width="100%" height="1400" />
-                    <iframe style={{marginTop: '2rem'}} src="https://docs.google.com/document/d/1CELsKIhKlVYclgcNwkU48hWyoqwLOONsrGQvfQHjahI/edit" width="100%" height="1400" />
+                    <iframe style={{marginTop: '2rem'}} src="https://docs.google.com/document/d/1CELsKIhKlVYclgcNwkU48hWyoqwLOONsrGQvfQHjahI/edit?fullscreen=true" width="100%" height="1400" />
                 </div>
             </div>
         </>
